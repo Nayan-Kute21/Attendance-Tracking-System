@@ -1,9 +1,5 @@
-import type { CapacitorConfig } from '@capacitor/cli';
-
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'AttendIT',
-  webDir: 'dist'
+  webDir: 'build'  // This should be 'build' for Ionic React
 };
-
-export default config;
