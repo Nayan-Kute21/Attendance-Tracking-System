@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Traditional attendance systems are often time-consuming, prone to errors, and inefficient. To address these issues, there is a need for an automated, accurate solution. This project proposes a hybrid mobile application, compatible with Android and iOS, that uses facial recognition technology to streamline attendance tracking",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7"
+  }
+}
