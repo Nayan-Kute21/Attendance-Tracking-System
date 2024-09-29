@@ -12,7 +12,7 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { ellipse, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
-import Dashboard from './pages/dashboard';
+import HomePage from './pages/dashboard';
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -58,7 +58,7 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/dashboard">
             <Redirect to="/dashboard" />
-            <Dashboard/>
+            <HomePage/>
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

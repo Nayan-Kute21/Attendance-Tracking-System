@@ -1,5 +1,7 @@
-const config: CapacitorConfig = {
+const config = {
   appId: 'io.ionic.starter',
   appName: 'AttendIT',
-  webDir: 'build'  // This should be 'build' for Ionic React
+  webDir: 'dist'  // This should be 'build' for Ionic React
 };
+
+export default config;

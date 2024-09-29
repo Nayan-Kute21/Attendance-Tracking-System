@@ -16,6 +16,26 @@ const css = {
   '--login-footer': '#ffffff99',
 };
 
-const Demo = () => (<Login style={{ height: 380, ...css }} />);
+interface DemoProps {
+  onLoginSuccess: () => void; // Define the prop type
+}
+
+const Demo: React.FC<DemoProps> = ({ onLoginSuccess }) => {
+  // Custom login handler
+  const handleLogin = (data: any) => {
+    // Assuming data contains user login information; handle it as needed.
+    console.log(data); // You can log or process the data
+
+    // Call the onLoginSuccess function to redirect to the dashboard
+    onLoginSuccess();
+  };
+
+  return (
+    <Login 
+      style={{ height: 380, ...css }} 
+      onSubmit={handleLogin} // Pass the custom handler to the onSubmit prop
+    />
+  );
+};
 
 export default Demo;
